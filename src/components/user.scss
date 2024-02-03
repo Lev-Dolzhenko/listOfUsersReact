@@ -1,0 +1,56 @@
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user_avatar {
+  img {
+    border-radius: 50%;
+    width: 80px;
+  }
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  margin-left: 10px;
+}
+
+.user_name {
+  font-weight: 500;
+  color: #fff;
+}
+
+.user_email {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.user_add {
+  margin-left: auto;
+}
+
+.user_add_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(253, 172, 22);
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
