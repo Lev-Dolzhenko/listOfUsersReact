@@ -1,10 +1,11 @@
 import "./succes.scss";
+import './animation.scss'
 
-function Succes({ onClickisSucces, invites }) {
+function Succes({ invites, onClickNotSucces, isSucces }) {
   return (
-    <div className='succes'>
+    <div className={`succes ${isSucces ? "show" : "show"} `}>
       <h1 className="succes_title1">You {invites.length} Invited sended!</h1>
-      <button onClick={onClickisSucces}>Close</button>
+      <button onClick={onClickNotSucces}>Close</button>
     </div>
   );
 }

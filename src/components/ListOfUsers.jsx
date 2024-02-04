@@ -44,8 +44,14 @@ function ListOfUsers() {
   };
 
   const onClickisSucces = () => {
-    setIsSucces((prev) => !prev);
+    setIsSucces(true);
   };
+
+  const onClickNotSucces = () => {
+    setIsSucces(false)
+    setInvites([])
+    setSearchVal('')
+  }
 
   return (
     <>
@@ -56,6 +62,7 @@ function ListOfUsers() {
             setInvites={setInvites}
             invites={invites}
             isSucces={isSucces}
+            onClickNotSucces={onClickNotSucces}
           />
         ) : (
           <div className="users_wrapper">
